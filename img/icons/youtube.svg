@@ -1,16 +1,9 @@
 
-<svg width="46px" height="48px" viewBox="0 0 46 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <rect x="628" y="36" width="46" height="48" id="rect-1"></rect>
-  </defs>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="Index" transform="translate(-668.000000, -2678.000000)">
+    <g id="Index" transform="translate(-681.000000, -2694.000000)" fill="#FFFFFF">
       <g id="footer" transform="translate(40.000000, 2642.000000)">
-        <g id="Layer-52-copy-3">
-          <image x="628" y="36" width="46" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAwCAYAAABuZUjcAAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zyHujWEgWtwyrGXkpsWMspCw0KG+bO3fe1Myd250rZKtsLJSF2Hhb+AJiq6yVIlKy8Q2IjabrPDOjGZRTp/Pr/5xznnMOeP26ZaUqeyBtOnZ4LKTNzs1r1S/U0kQdbfTqRtYamZycQOw7/rSPezwq3gZVr7/v/1p9NJY1wFMjPGBYtiM8LNyx4liKo8IttgwlvKo4UeAtxZECH+ZzpsOjwmfCmpHUpc5zJxwwknYavOovf6QsJ1HG6dSyUZxHbdIQM2emJLaJt5MlzBghNCIss0QKh6BEE5zYqqOKRjPWmr2USDraiFwgpo2bRndA6+vpHQJ1z993KmkZmX3wHSq2S1pkFy42ofWxpPkPwLcB51eWbut5qULcG4/D6yk0zkHzDdQtZOP9fYVNGkJQ9ey6b51QvQO5bdf9PHLd3LEUP8GlWbhNsRcnDzC9DhPXsLcPXdLbt/gFtQtnW4k8oPUAAACbSURBVGgF7dLRCYAwFMVQFfffVEeo1g3yEYRC/A6Xx6n7GOPaFvz2efiz4N3bseLR380d/vfLJZ44FOhXgVBalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1BalrhGCYcSh1Batqz4OQlujeHHoRdzIwkvAdQMiwAAAABJRU5ErkJggg=="></image>
-          <use fill="#81B3D2" fill-rule="evenodd" xlink:href="#rect-1"></use>
-        </g>
-        <g id="youtube" transform="translate(641.000000, 52.000000)" fill="#FFFFFF">
+        <g id="youtube" transform="translate(641.000000, 52.000000)">
           <g id="Shape">
             <path d="M17,0 L3,0 C1.35,0 0,1.35 0,3 L0,13 C0,14.65 1.35,16 3,16 L17,16 C18.65,16 20,14.65 20,13 L20,3 C20,1.35 18.65,0 17,0 Z M6.027,11.998 L6.027,4.002 L15.014,8 L6.027,11.998 L6.027,11.998 Z" fill-rule="nonzero"></path>
           </g>
