@@ -23,7 +23,7 @@
   <main>
 
     <section>
-      <h1>Туристический город Седона</h1>
+      <h1 class="visually-hidden">Туристический город Седона</h1>
       <figure>
         <img src="img/welcome.svg" alt="Добро пожаловать в Седону">
         <img src="img/sedona-background.jpg" width="1200" height="773" alt="Вид на горы в Седоне">
@@ -34,7 +34,7 @@
     <section>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <p>Седона - небольшой городок в Аризоне,<br>
           заслуживающий большего!</p>
@@ -117,7 +117,7 @@
     </section>
 
     <section>
-      <h2>Карта Седоны</h2>
+      <h2 class="visually-hidden">Карта Седоны</h2>
 
       <!--Здесь будет карта Седоны-->
     </section>
@@ -130,30 +130,26 @@
     <div>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Sedona on Twitter">
             <img src="img/icons/twitter.svg">
-            Twitter
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Sedona on Facebook">
             <img src="img/icons/facebook.svg">
-            Facebook
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Sedona on Youtube">
             <img src="img/icons/youtube.svg">
-            Youtube
           </a>
         </li>
       </ul>
     </div>
 
     <p> Website by:
-      <a href="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru" aria-label="HTML Academy">
         <img src="img/logo-htmlacademy.svg">
-        HTML Academy
       </a>
     </p>
   </footer>
@@ -186,7 +182,7 @@
           <label for="adult-amount">Взрослые:</label>
           <img src="img/icons/minus.svg">
           <input id="adult-amount"
-                 type="text"
+                 type="number"
                  name="input-adult-amount"
                  value="2">
           <img src="img/icons/plus.svg">
@@ -196,7 +192,7 @@
           <label for="child-amount">Дети:</label>
           <img src="img/icons/minus.svg">
           <input id="child-amount"
-                 type="text"
+                 type="number"
                  name="input-adult-amount"
                  value="0">
           <img src="img/icons/plus.svg">
