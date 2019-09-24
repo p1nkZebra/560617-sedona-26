@@ -43,7 +43,6 @@
       </section>
 
       <section>
-        <!--Причина первая (текст + картинка)-->
         <h2>Настоящий городок</h2>
         <p>- №1 -</p>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -53,30 +52,29 @@
       </section>
 
       <section>
-        <!--Список рекомендаций и преимуществ-->
+        <h2 class="visually-hidden">Рекомендации</h2>
         <ul>
           <li>
             <img src="img/icons/recommends-hotels.svg" alt="">
-            <h2>Жилье</h2>
+            <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
 
           <li>
             <img src="img/icons/recommends-food.svg" alt="">
-            <h2>Еда</h2>
+            <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
           <li>
             <img src="img/icons/recommends-souvenirs.svg" alt="">
-            <h2>Сувениры</h2>
+            <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section>
-        <!--Причина вторая (картинка + текст)-->
         <img src="img/sedona-devils-bridge.jpg">
 
         <h2>Там есть мост дьявола</h2>
@@ -85,7 +83,6 @@
       </section>
 
       <section>
-        <!--Причины 3, 4, 5 (текст)-->
         <ul>
           <li>
             <h2>Небольшая площадь</h2>
@@ -118,8 +115,9 @@
 
     <section>
       <h2 class="visually-hidden">Карта Седоны</h2>
-
-      <!--Здесь будет карта Седоны-->
+      <p>
+        <img src="img/map.jpg" width="1200" height="593" alt="Спутниковая Google карта местности">
+      </p>
     </section>
 
   </main>
@@ -157,15 +155,15 @@
   <div>
     <h2>Поиск гостиницы в Седоне</h2>
 
-    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
+    <form class="filter" method="post" action="https://echo.htmlacademy.ru">
 
         <div>
           <label for="date-from">Дата заезда:</label>
           <input id="date-from"
                  type="date"
                  name="input-date-from"
-                 value="2017-04-24">
+                 value=""
+                 placeholder="24 апреля 2017">
           <img src="img/icons/calendar.svg">
         </div>
 
@@ -173,8 +171,9 @@
           <label for="date-to">Дата выезда:</label>
           <input id="date-to"
                  type="date"
-                 name="input-date-from"
-                 value="2017-07-04">
+                 name="input-date-to"
+                 value=""
+                 placeholder="4 июля 2017">
           <img src="img/icons/calendar.svg">
         </div>
 
@@ -201,8 +200,6 @@
         <div>
           <button type="submit">Найти</button>
         </div>
-
-      </fieldset>
 
     </form>
 

@@ -24,7 +24,48 @@
   <section>
     <h1 class="visually-hidden">Фильтр поиска гостиниц</h1>
 
-    <!--Здесь будет форма-->
+    <img src="img/filter-background.jpg" width="1200" height="562" alt="">
+
+    <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+
+      <fieldset class="form-group">
+        <legend>Инфраструктура:</legend>
+          <input type="checkbox" value="" checked>Бассейн<br>
+          <input type="checkbox" value="">Парковка<br>
+          <input type="checkbox" value="">WI-FI<br>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>Тип жилья:</legend>
+        <input type="checkbox" value="" checked>Гостиница<br>
+        <input type="checkbox" value="" checked>Мотель<br>
+        <input type="checkbox" value="" checked>Апартаменты<br>
+      </fieldset>
+
+
+      <p>Стоимость в сутки (Р)</p>
+
+      <!--Тут будут значеия ОТ и ДО-->
+
+      <input type="range" min="1" max="100" value="50">
+
+      <button type="submit">Показать</button>
+
+    </form>
+
+
+    <div>
+      <p>Найдено: 3</p>
+
+      <p>Сортировка</p>
+      <button type="button">По цене</button>
+      <button type="button">По типу</button>
+      <button type="button">По рейтингу</button>
+
+      <img src="img/icons/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+      <img src="img/icons/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+    </div>
+
   </section>
 
   <section>
