@@ -45,9 +45,11 @@
 
       <p>Стоимость в сутки (Р)</p>
 
-      <!--Тут будут значеия ОТ и ДО-->
+      <p>От 0</p>
+      <p>До 3000</p>
 
-      <input type="range" min="1" max="100" value="50">
+      <input type="range" min="0" max="4000" value="0">
+      <input type="range" min="0" max="4000" value="3000">
 
       <button type="submit">Показать</button>
 
@@ -62,8 +64,8 @@
       <button type="button">По типу</button>
       <button type="button">По рейтингу</button>
 
-      <img src="img/icons/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
-      <img src="img/icons/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+      <button id="sort-up-direction" type="button"></button>
+      <button id="sort-down-direction" type="button"></button>
     </div>
 
   </section>
@@ -71,7 +73,7 @@
   <section>
     <h2 class="visually-hidden">Список гостиниц согласно фильтру и сортировке</h2>
 
-    <ol>
+    <ul>
       <li>
         <img src="img/hotels/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & Spa hotel">
         <div>
@@ -130,7 +132,7 @@
       </li>
 
 
-    </ol>
+    </ul>
   </section>
 
 
