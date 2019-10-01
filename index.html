@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Туристический город Седона</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Туристический город Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
 
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo.svg" width="138" height="70" alt="Седона">
       </a>
@@ -22,7 +27,7 @@
 
   <main>
 
-    <section>
+    <section class="welcome-section">
       <h1 class="visually-hidden">Туристический город Седона</h1>
       <figure>
         <img src="img/welcome.svg" alt="Добро пожаловать в Седону">
@@ -31,7 +36,7 @@
       </figure>
     </section>
 
-    <section>
+    <section class="advantage-list-section">
 
       <section>
         <h2 class="visually-hidden">Преимущества</h2>
@@ -106,14 +111,14 @@
 
     </section>
 
-    <section>
+    <section class="book-section">
       <h2>Заинтересовались?</h2>
 
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вас лучшие предложения гостиниц в седоне</p>
     </section>
 
-    <section>
+    <section class="sedona-google-map-section">
       <h2 class="visually-hidden">Карта Седоны</h2>
       <p>
         <img src="img/map.jpg" width="1200" height="593" alt="Спутниковая Google карта местности">
@@ -123,9 +128,9 @@
   </main>
 
   <footer>
-    <span>#visitsedona</span>
+    <span class="visit-sedona-hashtag">#visitsedona</span>
 
-    <div>
+    <div class="social-network-list">
       <ul>
         <li>
           <a href="#" aria-label="Sedona on Twitter">
@@ -145,11 +150,14 @@
       </ul>
     </div>
 
-    <p> Website by:
-      <a href="https://htmlacademy.ru" aria-label="HTML Academy">
-        <img src="img/logo-htmlacademy.svg">
-      </a>
-    </p>
+    <div class="website-creator-logo">
+      <p> Website by:
+        <a href="https://htmlacademy.ru" aria-label="HTML Academy">
+          <img src="img/logo-htmlacademy.svg">
+        </a>
+      </p>
+    </div>
+
   </footer>
 
   <div>
