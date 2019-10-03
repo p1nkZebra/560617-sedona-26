@@ -29,11 +29,18 @@ ul {
 /* NAVIGATION */
 
 .main-navigation {
-  font-weight: bold;
+  display: inline-block;
+
+  font: inherit;
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
 
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -45,7 +52,7 @@ ul {
   color: #766357;
 }
 .main-navigation a:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 
@@ -82,119 +89,156 @@ ul {
 
 /* HOTELS PAGE */
 
-.filtered-hotel-list-section a {
+a.hotel-name {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: #000000;
 }
-.filtered-hotel-list-section a:hover,
-.filtered-hotel-list-section a:focus {
+a.hotel-name:hover,
+a.hotel-name:focus {
   color: #81b3d2;
 }
-.filtered-hotel-list-section a:active {
-  opacity: 30%;
+a.hotel-name:active {
+  opacity: 0.3;
 }
 
-.filtered-hotel-list-section span {
-  font: inherit;
-}
+button.book-it-now {
+  display: inline-block;
+  width: 142px;
+  height: 27px;
 
-.filtered-hotel-list-section .more-info {
-  font: inherit;
-
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  line-height: 21px;
-
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: none;
-}
-.filtered-hotel-list-section .more-info:hover,
-.filtered-hotel-list-section .more-info:focus {
-  background-color: #669ec0;
-}
-.filtered-hotel-list-section .more-info:active {
-  background-color: #5496bd;
-  opacity: 30%;
-}
-
-.filtered-hotel-list-section .book-it-now {
   font: inherit;
 
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-
-  line-height: 21px;
 
   color: #ffffff;
   background-color: #766357;
   border: none;
 }
-.filtered-hotel-list-section .book-it-now:hover,
-.filtered-hotel-list-section .book-it-now:focus {
+button.book-it-now:hover,
+button.book-it-now:focus {
   background-color: #604e43;
 }
-.filtered-hotel-list-section .book-it-now:active {
+button.book-it-now:active {
   background-color: #503e33;
-  opacity: 30%;
+}
+button.book-it-now:active {
+  opacity: 0.3;
 }
 
-.filtered-hotel-list-section .hotel-rating {
+a.more-info {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+
   font: inherit;
 
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+a.more-info:hover,
+a.more-info:focus {
+  background-color: #669ec0;
+}
+a.more-info:active {
+  background-color: #5496bd;
+}
+a.more-info:active {
+  opacity: 0.3;
+}
+
+.hotel-rating {
+  display: inline-block;
+  width: 111px;
+  height: 21px;
+
+  text-align: center;
+  vertical-align: middle;
+
   color: #d8d8d8;
   background-color: #f2f2f2;
-  border: none;
 }
 
 
 /*FOOTER*/
 
 footer {
+  font: inherit;
+
   color: #000000;
   background-color: #ffffff;
 }
 
-footer .visit-sedona-hashtag {
+.visit-sedona-hashtag {
   font: inherit;
   font-weight: bold;
 
   vertical-align: middle;
 }
 
-.social-network-list li {
+/* SOCIAL NETWORKS */
+
+a.social-network-btn {
+  display: inline-block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-}
 
-.social-network-list li:hover,
-.social-network-list li:focus {
+  margin: 3px;
+}
+a.social-network-btn:hover,
+a.social-network-btn:focus {
   background-color: #669ec0;
 }
-.social-network-list li:active {
+a.social-network-btn:active {
   background-color: #5496bd;
-  opacity: 30%;
+}
+a.social-network-btn:active img {
+  opacity: 0.3;
 }
 
-.htmlacademy-logo p {
-  font: inherit;
-  vertical-align: middle;
-}
-.htmlacademy-logo a:hover,
-.htmlacademy-logo a:focus {
+/* HTMLACADEMY LOGO */
 
+a.htmlacademy-logo-btn {
+  display: inline-block;
+  width: 115px;
+  height: 41px;
 }
-.htmlacademy-logo a:active {
-
+a.htmlacademy-logo-btn img.hover,
+a.htmlacademy-logo-btn img.active {
+  display: none;
+}
+a.htmlacademy-logo-btn img.regular {
+  display: inline-block;
+}
+a.htmlacademy-logo-btn:hover img.regular,
+a.htmlacademy-logo-btn:hover img.active,
+a.htmlacademy-logo-btn:focus img.regular,
+a.htmlacademy-logo-btn:focus img.active {
+  display: none;
+}
+a.htmlacademy-logo-btn:hover img.hover,
+a.htmlacademy-logo-btn:focus img.hover {
+  display: inline-block;
+}
+a.htmlacademy-logo-btn:active img.regular,
+a.htmlacademy-logo-btn:active img.hover {
+  display: none;
+}
+a.htmlacademy-logo-btn:active img.active {
+  display: inline-block;
 }
