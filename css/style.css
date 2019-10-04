@@ -5,7 +5,6 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
   font-style: normal;
   color: #000000;
   text-transform: uppercase;
@@ -48,9 +47,11 @@ ul {
 .main-navigation a:focus {
   color: #81b3d2;
 }
+
 .main-navigation a:active {
   color: #766357;
 }
+
 .main-navigation a:active {
   opacity: 0.3;
 }
@@ -99,11 +100,13 @@ a.hotel-name {
 
   color: #000000;
 }
+
 a.hotel-name:hover,
 a.hotel-name:focus {
   color: #81b3d2;
 }
-a.hotel-name:active {
+
+a.hotel-name:active span{
   opacity: 0.3;
 }
 
@@ -121,16 +124,21 @@ button.book-it-now {
 
   color: #ffffff;
   background-color: #766357;
+
   border: none;
+  outline: none;
 }
+
 button.book-it-now:hover,
 button.book-it-now:focus {
   background-color: #604e43;
 }
+
 button.book-it-now:active {
   background-color: #503e33;
 }
-button.book-it-now:active {
+
+button.book-it-now:active span {
   opacity: 0.3;
 }
 
@@ -150,14 +158,17 @@ a.more-info {
   background-color: #81b3d2;
   border: none;
 }
+
 a.more-info:hover,
 a.more-info:focus {
   background-color: #669ec0;
 }
+
 a.more-info:active {
   background-color: #5496bd;
 }
-a.more-info:active {
+
+a.more-info:active span {
   opacity: 0.3;
 }
 
@@ -200,13 +211,16 @@ a.social-network-btn {
 
   margin: 3px;
 }
+
 a.social-network-btn:hover,
 a.social-network-btn:focus {
   background-color: #669ec0;
 }
+
 a.social-network-btn:active {
   background-color: #5496bd;
 }
+
 a.social-network-btn:active img {
   opacity: 0.3;
 }
@@ -218,27 +232,33 @@ a.htmlacademy-logo-btn {
   width: 115px;
   height: 41px;
 }
-a.htmlacademy-logo-btn img.hover,
-a.htmlacademy-logo-btn img.active {
+
+a.htmlacademy-logo-btn .hover,
+a.htmlacademy-logo-btn .active {
   display: none;
 }
-a.htmlacademy-logo-btn img.regular {
+
+a.htmlacademy-logo-btn .regular {
   display: inline-block;
 }
-a.htmlacademy-logo-btn:hover img.regular,
-a.htmlacademy-logo-btn:hover img.active,
-a.htmlacademy-logo-btn:focus img.regular,
-a.htmlacademy-logo-btn:focus img.active {
+
+a.htmlacademy-logo-btn:hover .regular,
+a.htmlacademy-logo-btn:hover .active,
+a.htmlacademy-logo-btn:focus .regular,
+a.htmlacademy-logo-btn:focus .active {
   display: none;
 }
-a.htmlacademy-logo-btn:hover img.hover,
-a.htmlacademy-logo-btn:focus img.hover {
+
+a.htmlacademy-logo-btn:hover .hover,
+a.htmlacademy-logo-btn:focus .hover {
   display: inline-block;
 }
-a.htmlacademy-logo-btn:active img.regular,
-a.htmlacademy-logo-btn:active img.hover {
+
+a.htmlacademy-logo-btn:active .regular,
+a.htmlacademy-logo-btn:active .hover {
   display: none;
 }
-a.htmlacademy-logo-btn:active img.active {
+
+a.htmlacademy-logo-btn:active .active {
   display: inline-block;
 }
