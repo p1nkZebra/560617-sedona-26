@@ -39,8 +39,9 @@ body.index-page {
 
 /* HEADER */
 
-.main-header {
-  margin: 0;
+header {
+  margin-right: 40px;
+  margin-left: 40px;
   padding: 0;
 
   min-width: 1200px;
@@ -69,19 +70,19 @@ body.index-page {
   /*background-color: #ffffff;*/
 }
 
-.site-navigation {
+.site-navigation-container {
   margin: 0;
   padding: 0;
 
   min-width: 1200px;
-  min-height: 71px;
+  min-height: 56px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-.site-navigation li {
+.site-navigation-container li {
   width: 239px;
 
   display: flex;
@@ -94,7 +95,7 @@ body.index-page {
 
 }
 
-.site-navigation .main-header-logo {
+.site-navigation-container .main-header-logo {
   width: 244px;
 }
 
