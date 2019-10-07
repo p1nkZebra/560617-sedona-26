@@ -9,21 +9,26 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="hotels-page">
 
-  <header>
-    <nav  class="main-navigation">
-      <a href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Седона">
-      </a>
-      <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+<header  class="main-header">
+  <nav class="main-navigation">
+    <!--<a class="main-header-logo" href="index.html" aria-label="Sedona logo">-->
+    <!--<imgsrc="img/logo.svg" width="138" height="70" alt="Седона">-->
+    <!--</a>-->
+    <ul class="site-navigation">
+      <li><a href="">Информация</a></li>
+      <li><a href="">Фото и видео</a></li>
+
+      <li class="main-header-logo"><a class="main-header-logo-img"href="index.html"
+                                      aria-label="Sedona logo">Logo</a>
+      </li>
+
+      <li><a href="">Карта штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section>
@@ -143,11 +148,14 @@
 
   </main>
 
-  <footer>
-    <span class="visit-sedona-hashtag">#visitsedona</span>
+  <footer class="footer-flex-container">
 
     <div>
-      <ul>
+      <span class="visit-sedona-hashtag">#visitsedona</span>
+    </div>
+
+    <div>
+      <ul class="socials-flex-container">
         <li>
           <a href="#"
              class="social-network-btn twitter"
@@ -172,8 +180,8 @@
       </ul>
     </div>
 
-    <div>
-      <p> Website by:
+    <div class="htmlacademy-logo">
+        <span>Website by</span>
         <a href="https://htmlacademy.ru"
            class="htmlacademy-logo-btn"
            aria-label="HTML Academy">
@@ -181,7 +189,6 @@
           <img class="hover" src="img/logo-htmlacademy-hover.svg">
           <img class="active" src="img/logo-htmlacademy-active.svg">
         </a>
-      </p>
     </div>
 
   </footer>
