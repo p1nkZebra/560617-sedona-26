@@ -15,9 +15,6 @@ body {
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-}
 
 .visually-hidden {
   visibility: hidden;
@@ -30,17 +27,14 @@ ul {
 .main-navigation {
   display: inline-block;
 
-  font: inherit;
-  font-size: 14px;
   line-height: 26px;
-
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
+}
 
-  color: #000000;
-  background-color: #ffffff;
+.main-navigation ul {
+  list-style: none;
 }
 
 .main-navigation a:hover,
@@ -49,31 +43,34 @@ ul {
 }
 
 .main-navigation a:active {
-  color: #766357;
+  color: #000000;
 }
 
 .main-navigation a:active {
   opacity: 0.3;
 }
 
+.main-navigation a:visited {
+  color: #766357;
+}
 
 
-/*MAIN-PAGE*/
+
+/* WELCOME SECTION */
 
 .welcome-section {
 
 }
 
-
-
-/* ADVANTAGE-LIST */
+/* ADVANTAGE SECTION */
 
 .advantage-list-section p {
   text-align: center;
 }
 
-
-
+.advantage-list-section ul {
+  list-style: none;
+}
 
 /* BOOK-SECTION */
 
@@ -90,32 +87,27 @@ ul {
 
 /* HOTELS PAGE */
 
-a.hotel-name {
+.hotel-name {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
-
-  color: #000000;
 }
 
-a.hotel-name:hover,
-a.hotel-name:focus {
+.hotel-name:hover,
+.hotel-name:focus {
   color: #81b3d2;
 }
 
-a.hotel-name:active span{
+.hotel-name:active span {
   opacity: 0.3;
 }
 
-button.book-it-now {
+.book-it-now {
   display: inline-block;
   width: 142px;
   height: 27px;
-
-  font: inherit;
 
   font-weight: bold;
   text-align: center;
@@ -129,25 +121,23 @@ button.book-it-now {
   outline: none;
 }
 
-button.book-it-now:hover,
-button.book-it-now:focus {
+.book-it-now:hover,
+.book-it-now:focus {
   background-color: #604e43;
 }
 
-button.book-it-now:active {
+.book-it-now:active {
   background-color: #503e33;
 }
 
-button.book-it-now:active span {
+.book-it-now:active span {
   opacity: 0.3;
 }
 
-a.more-info {
+.more-info {
   display: inline-block;
   width: 110px;
   height: 27px;
-
-  font: inherit;
 
   font-weight: bold;
   text-align: center;
@@ -159,16 +149,16 @@ a.more-info {
   border: none;
 }
 
-a.more-info:hover,
-a.more-info:focus {
+.more-info:hover,
+.more-info:focus {
   background-color: #669ec0;
 }
 
-a.more-info:active {
+.more-info:active {
   background-color: #5496bd;
 }
 
-a.more-info:active span {
+.more-info:active span {
   opacity: 0.3;
 }
 
@@ -180,7 +170,7 @@ a.more-info:active span {
   text-align: center;
   vertical-align: middle;
 
-  color: #d8d8d8;
+  color: #666666;
   background-color: #f2f2f2;
 }
 
@@ -188,22 +178,21 @@ a.more-info:active span {
 /*FOOTER*/
 
 footer {
-  font: inherit;
 
-  color: #000000;
-  background-color: #ffffff;
+}
+
+footer ul {
+  list-style: none;
 }
 
 .visit-sedona-hashtag {
-  font: inherit;
   font-weight: bold;
-
   vertical-align: middle;
 }
 
 /* SOCIAL NETWORKS */
 
-a.social-network-btn {
+.social-network-btn {
   display: inline-block;
   width: 46px;
   height: 48px;
@@ -212,53 +201,53 @@ a.social-network-btn {
   margin: 3px;
 }
 
-a.social-network-btn:hover,
-a.social-network-btn:focus {
+.social-network-btn:hover,
+.social-network-btn:focus {
   background-color: #669ec0;
 }
 
-a.social-network-btn:active {
+.social-network-btn:active {
   background-color: #5496bd;
 }
 
-a.social-network-btn:active img {
+.social-network-btn:active img {
   opacity: 0.3;
 }
 
 /* HTMLACADEMY LOGO */
 
-a.htmlacademy-logo-btn {
+.htmlacademy-logo-btn {
   display: inline-block;
   width: 115px;
   height: 41px;
 }
 
-a.htmlacademy-logo-btn .hover,
-a.htmlacademy-logo-btn .active {
+.htmlacademy-logo-btn .hover,
+.htmlacademy-logo-btn .active {
   display: none;
 }
 
-a.htmlacademy-logo-btn .regular {
+.htmlacademy-logo-btn .regular {
   display: inline-block;
 }
 
-a.htmlacademy-logo-btn:hover .regular,
-a.htmlacademy-logo-btn:hover .active,
-a.htmlacademy-logo-btn:focus .regular,
-a.htmlacademy-logo-btn:focus .active {
+.htmlacademy-logo-btn:hover .regular,
+.htmlacademy-logo-btn:hover .active,
+.htmlacademy-logo-btn:focus .regular,
+.htmlacademy-logo-btn:focus .active {
   display: none;
 }
 
-a.htmlacademy-logo-btn:hover .hover,
-a.htmlacademy-logo-btn:focus .hover {
+.htmlacademy-logo-btn:hover .hover,
+.htmlacademy-logo-btn:focus .hover {
   display: inline-block;
 }
 
-a.htmlacademy-logo-btn:active .regular,
-a.htmlacademy-logo-btn:active .hover {
+.htmlacademy-logo-btn:active .regular,
+.htmlacademy-logo-btn:active .hover {
   display: none;
 }
 
-a.htmlacademy-logo-btn:active .active {
+.htmlacademy-logo-btn:active .active {
   display: inline-block;
 }
