@@ -11,30 +11,30 @@
 
 <body class="hotels-page">
 
-<header  class="main-header">
-  <nav class="main-navigation">
-    <!--<a class="main-header-logo" href="index.html" aria-label="Sedona logo">-->
-    <!--<imgsrc="img/logo.svg" width="138" height="70" alt="Седона">-->
-    <!--</a>-->
-    <ul class="site-navigation">
-      <li><a href="">Информация</a></li>
-      <li><a href="">Фото и видео</a></li>
+  <header>
+    <nav class="main-navigation">
+      <ul class="site-navigation-container">
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
 
-      <li class="main-header-logo"><a class="main-header-logo-img"href="index.html"
-                                      aria-label="Sedona logo">Logo</a>
-      </li>
+        <li class="main-header-logo">
+          <a class="main-header-logo-img"
+             href="index.html"
+             aria-label="Sedona logo">
+            <img src="img/logo.svg" width="138" height="71" alt="Седона">
+          </a>
+        </li>
 
-      <li><a href="">Карта штата</a></li>
-      <li><a href="hotels.html">Гостиницы</a></li>
-    </ul>
-  </nav>
-</header>
+        <li><a href="">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main>
-    <section>
+  <main class="hotels-main-container">
+
+    <section class="search-filter-container">
       <h1 class="visually-hidden">Фильтр поиска гостиниц</h1>
-
-      <img src="img/filter-background.jpg" width="1200" height="562" alt="">
 
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
 
@@ -64,23 +64,30 @@
         <button type="submit">Показать</button>
 
       </form>
+    </section>
 
+    <section class="search-sort-container">
+      <h2 class="visually-hidden">Сортировка результатов поиска</h2>
 
       <div>
-        <p>Найдено: 3</p>
+        <span>Найдено: 3</span>
+      </div>
 
-        <p>Сортировка</p>
+      <div>
+        <span>Сортировка</span>
         <button type="button">По цене</button>
         <button type="button">По типу</button>
         <button type="button">По рейтингу</button>
+      </div>
 
+      <div>
         <button id="sort-up-direction" type="button"></button>
         <button id="sort-down-direction" type="button"></button>
       </div>
 
     </section>
 
-    <section>
+    <section class="search-result-container">
       <h2 class="visually-hidden">Список гостиниц согласно фильтру и сортировке</h2>
 
       <ul>
@@ -145,10 +152,9 @@
       </ul>
     </section>
 
-
   </main>
 
-  <footer class="footer-flex-container">
+  <footer>
 
     <div>
       <span class="visit-sedona-hashtag">#visitsedona</span>
