@@ -34,7 +34,7 @@
 
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
 
-          <div class="checkbox-container">
+          <div class="filter-group">
             <div class="checkbox-group">
               <legend>Инфраструктура:</legend>
               <div class="checkbox-div">
@@ -53,26 +53,38 @@
 
             <div class="checkbox-group">
               <legend>Тип жилья:</legend>
-              <input type="checkbox" value="" checked>Гостиница<br>
-              <input type="checkbox" value="" checked>Мотель<br>
-              <input type="checkbox" value="" checked>Апартаменты<br>
+              <div class="checkbox-div">
+                <label class="checkbox-pic"><input type="checkbox" checked><span></span></label>
+                <label class="checkbox-label">Гостиница</label>
+              </div>
+              <div class="checkbox-div">
+                <label class="checkbox-pic"><input type="checkbox" checked><span></span></label>
+                <label class="checkbox-label">Мотель</label>
+              </div>
+              <div class="checkbox-div">
+                <label class="checkbox-pic"><input type="checkbox" checked><span></span></label>
+                <label class="checkbox-label">Апартаменты</label>
+              </div>
             </div>
           </div>
 
-          <div class="price-range">
-            <span>Стоимость в сутки (Р):</span>
+          <div class="filter-group price">
+            <legend>Стоимость в сутки (Р):</legend>
 
-            <div>
+            <div class="price-range-value">
               <span>От 0</span>
+              <span class="empty-span"></span>
               <span>До 3000</span>
             </div>
 
-
-            <input type="range" min="0" max="4000" value="0">
-            <input type="range" min="0" max="4000" value="3000">
+            <div class="price-range-filter">
+              <input type="range" min="0" max="4000" value="0">
+              <input type="range" min="0" max="4000" value="3000">
+            </div>
 
             <button type="submit">Показать</button>
           </div>
+
 
         </form>
 
@@ -89,14 +101,17 @@
           <div class="sort-options">
             <div class="sort-options-criteria">
               <span>Сортировка:</span>
-              <a href="">По цене</a>
-              <a href="">По типу</a>
-              <a href="">По рейтингу</a>
+
+              <ul>
+                <li> <a href="">По цене</a></li>
+                <li><a href="">По типу</a></li>
+                <li><a href="">По рейтингу</a></li>
+              </ul>
             </div>
 
             <div  class="sort-direction">
-              <button id="sort-up-direction" type="button"><span></span></button>
-              <button id="sort-down-direction" type="button"><span></span></button>
+              <a href="" class="up"></a>
+              <a href="" class="down"></a>
             </div>
           </div>
         </div>
