@@ -47,33 +47,21 @@ a {
   width: 1200px;
   height: 56px;
 
-  display: block;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
+  /*display: block;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-navigation li {
-  width: 239px;
+  width: 480px;
   text-align: center;
-  vertical-align: middle;
+
+  display: flex;
 }
 
-.main-navigation .left-side {
-  float: left;
-  /*align-self: flex-end;*/
-}
-
-.main-navigation .right-side {
-  float: right;
-  /*align-self: flex-end;*/
-}
-
-.main-navigation .header-logo {
-  display: none;
-
-  width: 244px;
-  height: 71px;
+.main-navigation div {
+  flex-grow: 1;
 }
 
 .main-navigation a:link,
@@ -102,6 +90,13 @@ a {
 .main-navigation .now-active:link,
 .main-navigation .now-active:visited{
   color: #766357;
+}
+
+.main-navigation .header-logo {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -69px;
 }
 
 /* HOTELS PAGE */
