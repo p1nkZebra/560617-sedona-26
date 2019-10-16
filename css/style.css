@@ -25,8 +25,6 @@ a {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: #ffffff;
 }
 
 
@@ -64,8 +62,7 @@ a {
   flex-grow: 1;
 }
 
-.main-navigation a:link,
-.main-navigation a:visited {
+.main-navigation a {
   line-height: 26px;
   font-weight: bold;
   text-align: center;
@@ -87,8 +84,7 @@ a {
   opacity: 0.3;
 }
 
-.main-navigation .now-active:link,
-.main-navigation .now-active:visited{
+.main-navigation .now-active {
   color: #766357;
 }
 
@@ -101,23 +97,16 @@ a {
 
 /* HOTELS PAGE */
 
-.hotels-main-container {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  background-color: #ffffff;
-}
-
 .search-filter-container {
-  padding-bottom: 1px;
-
-  /* картинка не центрируется как на макете */
+  padding: 30px 0;
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  background-position-y: -56px ;
 }
 
 .search-filter-container .filter {
   width: 1056px;
-  margin: 30px auto;
+  margin: 0px auto;
 
   line-height: 21px;
 
@@ -272,6 +261,7 @@ a {
 
 .search-sort-container {
   height: 86px;
+  background-color: #ffffff;
 }
 
 .search-sort-container-content {
@@ -300,10 +290,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .sort-options-criteria {
   display: flex;
 }
-.sort-options-criteria ul{
+
+.sort-options-criteria ul {
   flex-grow: 1;
   list-style: none;
   padding: 0;
@@ -316,15 +308,11 @@ a {
   margin:  0 0 0 30px;
 }
 
-/*a:link { ... }*/
-/*a:visited { ... }*/
-/*a:hover { ... }*/
-/*a:active { ... }*/
-.sort-options-criteria a:link,
-.sort-options-criteria a:visited {
+.sort-options-criteria a {
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: #81b3d2;
+  color: #000000;
   opacity:  0.3;
 }
 
@@ -338,10 +326,10 @@ a {
   color:  #000000;
 }
 
-.sort-options-criteria .now-active:link,
-.sort-options-criteria .now-active:visited {
+.sort-options-criteria .now-active {
   text-decoration: none;
   color:  #81b3d2;
+  opacity:  1;
 }
 
 .search-result-container ul {
@@ -355,13 +343,12 @@ a {
 
 .search-result-container li,
 .search-result-container li:last-child {
-  border-style: solid;
-  border-width: 1px 0 0 0;
-  border-color: #000000;
+  background-color: #ffffff;
+  margin-top: 1px;
 }
 
 .search-result-container li:last-child {
-  border-width: 1px 0 1px 0;
+  margin-bottom: 1px;
 }
 
 .sort-direction {
@@ -370,15 +357,15 @@ a {
   align-items: center;
 }
 
-.sort-direction a {
+.sort-direction button {
   width: 11px;
   height: 10px;
   display: block;
-  margin-left: 10px;
+  margin-left: 8px;
+  border: none;
 }
 
-.sort-direction .up:link,
-.sort-direction .up:visited {
+.sort-direction .up {
   background: url(../img/icons/icon-sort-up-rest.svg) no-repeat;
 }
 
@@ -391,13 +378,11 @@ a {
   background: url(../img/icons/icon-sort-up-active.svg) no-repeat;
 }
 
-.sort-direction a[class="up now-active"]:link,
-.sort-direction a[class="up now-active"]:visited {
+.sort-direction button[class="up now-active"] {
   background: url(../img/icons/icon-sort-up-active.svg) no-repeat;
 }
 
-.sort-direction .down:link,
-.sort-direction .down:visited {
+.sort-direction .down {
   background: url(../img/icons/icon-sort-down-rest.svg) no-repeat;
 }
 
@@ -410,8 +395,7 @@ a {
   background: url(../img/icons/icon-sort-down-active.svg) no-repeat;
 }
 
-.sort-direction a[class="down now-active"]:link,
-.sort-direction a[class="down now-active"]:visited {
+.sort-direction button[class="down now-active"] {
   background: url(../img/icons/icon-sort-down-active.svg) no-repeat;
 }
 
@@ -441,8 +425,7 @@ a {
   flex-grow: 1;
 }
 
-.hotel-name:link,
-.hotel-name:visited {
+.hotel-name {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -514,11 +497,9 @@ a {
 
   font-weight: bold;
   text-align: center;
-  vertical-align: middle;
 
   color: #ffffff;
   background-color: #81b3d2;
-  border: none;
 }
 
 .more-info:hover,
@@ -558,6 +539,7 @@ a {
 
 footer {
   height: 120px;
+  background-color: #ffffff;
 
   display: flex;
   align-items: center;
@@ -566,7 +548,6 @@ footer {
 footer div {
   width: 400px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .visit-sedona-hashtag {
