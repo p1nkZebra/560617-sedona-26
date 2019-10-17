@@ -96,6 +96,107 @@ a {
   margin-left: -69px;
 }
 
+/* INDEX PAGE */
+
+.welcome-section figure {
+  margin: 0;
+  padding: 0;
+  height: 508px;
+
+  text-align: center;
+
+  background-image: url(../img/sedona-background.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -56px ;
+}
+
+.welcome-section .welcome-pic {
+  margin-top: 76px;
+}
+
+.welcome-section .polygon-pic {
+  margin-top: 16px;
+}
+
+.advantage-list-section {
+  text-align: center;
+
+}
+
+.catchphrase-section {
+  height: 216px;
+  background-color: #ffffff;
+}
+
+.catchphrase-section div {
+  margin: 62px 0;
+}
+
+.catchphrase {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantage {
+  height: 256px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+  display: flex;
+}
+
+.advantage .text {
+  width: 400px;
+  padding: 47px 0;
+}
+
+.advantage h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.recommends {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.recommends ul {
+  list-style: none;
+  padding: 0;
+  margin:  0;
+
+  display: flex;
+}
+
+.recommends h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantage-list {
+  color: #000000;
+  background-color: transparent;
+}
+
+.advantage ul {
+  list-style: none;
+  padding: 0;
+  margin:  0;
+
+  flex-grow: 1;
+
+  background-color: transparent;
+
+  display: flex;
+}
+
+.advantage li {
+  flex-grow: 1;
+}
+
 /* HOTELS PAGE */
 
 .search-filter-container {
