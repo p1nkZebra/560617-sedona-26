@@ -52,14 +52,15 @@ a {
 }
 
 .main-navigation li {
-  width: 480px;
+  width: 239px;
   text-align: center;
-
-  display: flex;
 }
 
-.main-navigation div {
-  flex-grow: 1;
+.main-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+.main-navigation li:nth-child(3) {
+  margin-left: auto;
 }
 
 .main-navigation a {
