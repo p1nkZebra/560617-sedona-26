@@ -129,13 +129,23 @@ a {
 }
 
 .catchphrase-section div {
-  margin: 62px 0;
+  width: 520px;
+  margin: 62px auto;
+  line-height: 26px;
 }
 
 .catchphrase {
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+}
+
+
+.number-text {
+  padding-top: 10px;
+}
+
+.simple-text {
+  padding: 5px 0;
 }
 
 .advantage {
@@ -148,13 +158,21 @@ a {
 
 .advantage .text {
   width: 400px;
-  padding: 47px 0;
+  padding: 47px 47px 50px 47px;
 }
 
 .advantage h2 {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 22px;
   font-weight: bold;
+}
+
+.advantage .simple-text,
+.recommends .simple-text {
+  padding-top: 5px;
+  line-height: 21px;
 }
 
 .recommends {
@@ -170,13 +188,22 @@ a {
   display: flex;
 }
 
+.recommends li {
+  width: 400px;
+  padding: 0 50px;
+}
+
 .recommends h3 {
+  margin: 0;
+  padding: 23px 0 0 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .advantage-list {
+  margin: 50px 0;
+  height: 156px;
   color: #000000;
   background-color: transparent;
 }
@@ -186,7 +213,6 @@ a {
   padding: 0;
   margin:  0;
 
-  flex-grow: 1;
 
   background-color: transparent;
 
@@ -194,7 +220,32 @@ a {
 }
 
 .advantage li {
-  flex-grow: 1;
+  width: 400px;
+  padding: 0 50px;
+}
+
+.book-section {
+  height: 172px;
+  padding: 60px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.book-section h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.book-section .simple-text {
+  margin: 30px 0;
+  padding: 0;
+}
+
+.sedona-google-map-section {
+  height: 473px;
 }
 
 /* HOTELS PAGE */
