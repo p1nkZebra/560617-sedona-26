@@ -112,14 +112,14 @@
         </div>
       </section>
 
-      <section class="advantage advantage-list">
+      <section class="advantage-list">
         <ul>
           <li>
             <h2>Небольшая<br>
               площадь</h2>
 
             <p class="number-text">— №3 —</p>
-            <p class="simple-text">Все достопремичательности находятся очень близко</p>
+            <p class="simple-text">Все достопремичательности находятся&nbsp;очень близко</p>
           </li>
 
           <li>
@@ -135,18 +135,15 @@
               туристов</h2>
 
             <p class="number-text">— №5 —</p>
-            <p class="simple-text">Большинство едет в Гранд каньон и толпится там!</p>
+            <p class="simple-text">Большинство едет в Гранд каньон и&nbsp;толпится там!</p>
           </li>
         </ul>
       </section>
 
     </section>
 
-    <section class="book-section">
-      <h2>Заинтересовались?</h2>
+    <section class="empty-section">
 
-      <p class="simple-text">Укажите предполагаемые даты поездки,<br>
-        и мы покажем вас лучшие предложения гостиниц в седоне</p>
     </section>
 
     <section class="sedona-google-map-section">
@@ -204,58 +201,86 @@
 
 
 
-  <div class="popup">
-    <h2>Поиск гостиницы в Седоне</h2>
+  <div class="popup-container">
+    <div class="search-form-title">
+      <h2>Заинтересовались?</h2>
 
-    <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+      <p>Укажите предполагаемые даты поездки,<br>
+        и мы покажем вас лучшие предложения гостиниц в седоне</p>
 
-        <div>
-          <label for="date-from">Дата заезда:</label>
-          <input id="date-from"
-                 type="date"
-                 name="input-date-from"
-                 value=""
-                 placeholder="24 апреля 2017">
-          <img src="img/icons/calendar.svg">
+      <button><span>Поиск гостиницы в Седоне</span></button>
+    </div>
+
+    <div class="search-form">
+      <form class="book-params" method="post" action="https://echo.htmlacademy.ru">
+
+        <div class="book-params-row">
+
+          <div class="book-params-row-label">
+            <label>Дата заезда:</label>
+          </div>
+
+          <div class="book-params-row-input">
+            <label>24 апреля 2017</label>
+            <button type="button" class="img-calendar"></button>
+          </div>
+
         </div>
 
-        <div>
-          <label for="date-to">Дата выезда:</label>
-          <input id="date-to"
-                 type="date"
-                 name="input-date-to"
-                 value=""
-                 placeholder="4 июля 2017">
-          <img src="img/icons/calendar.svg">
+        <div class="book-params-row">
+
+          <div class="book-params-row-label">
+            <label>Дата выезда:</label>
+          </div>
+
+          <div class="book-params-row-input">
+            <label>4 июля 2017</label>
+            <button type="button" class="img-calendar"></button>
+          </div>
+
         </div>
 
-        <div>
-          <label for="adult-amount">Взрослые:</label>
-          <img src="img/icons/minus.svg">
-          <input id="adult-amount"
-                 type="number"
-                 name="input-adult-amount"
-                 value="2">
-          <img src="img/icons/plus.svg">
+        <div class="book-params-row">
+
+          <div class="book-params-row-label">
+            <label>Взрослые:</label>
+          </div>
+
+          <div class="book-params-row-digital-input">
+            <button type="button" class="img-minus"></button>
+
+            <div class="value">
+              <label>2</label>
+            </div>
+
+            <button type="button" class="img-plus"></button>
+          </div>
+
+          <div class="book-params-row-label">
+            <label>Дети:</label>
+          </div>
+
+          <div class="book-params-row-digital-input">
+            <div class="img-minus"></div>
+
+            <div class="value">
+              <label>0</label>
+            </div>
+
+            <div class="img-plus"></div>
+          </div>
+
         </div>
 
-        <div>
-          <label for="child-amount">Дети:</label>
-          <img src="img/icons/minus.svg">
-          <input id="child-amount"
-                 type="number"
-                 name="input-adult-amount"
-                 value="0">
-          <img src="img/icons/plus.svg">
+        <div class="book-params-submit">
+          <button type="submit"><span>Найти</span></button>
         </div>
 
-        <div>
-          <button type="submit">Найти</button>
-        </div>
+      </form>
 
-    </form>
+<!--      <button type="button">Закрыть</button>-->
+    </div>
 
-    <button type="button">Закрыть</button>
   </div>
 
 
