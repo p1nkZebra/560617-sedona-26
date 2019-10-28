@@ -143,8 +143,16 @@
     </section>
 
     <section class="empty-section">
+      <div class="search-form-title">
+        <h2>Заинтересовались?</h2>
 
+        <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вас лучшие предложения гостиниц в седоне</p>
+
+        <button><span>Поиск гостиницы в Седоне</span></button>
+      </div>
     </section>
+
 
     <section class="sedona-google-map-section">
       <h2 class="visually-hidden">Карта Седоны</h2>
@@ -202,29 +210,21 @@
 
 
   <div class="popup-container">
-    <div class="search-form-title">
-      <h2>Заинтересовались?</h2>
-
-      <p>Укажите предполагаемые даты поездки,<br>
-        и мы покажем вас лучшие предложения гостиниц в седоне</p>
-
-      <button><span>Поиск гостиницы в Седоне</span></button>
-    </div>
 
     <div class="search-form">
       <form class="book-params" method="post" action="https://echo.htmlacademy.ru">
 
         <div class="book-params-row">
-
           <div class="book-params-row-label">
-            <label>Дата заезда:</label>
+            <label for="date-from">Дата заезда:</label>
           </div>
-
-          <div class="book-params-row-input">
-            <label>24 апреля 2017</label>
-            <button type="button" class="img-calendar"></button>
-          </div>
-
+          <input id="date-from"
+                 class="book-params-row-input"
+                 type="date"
+                 name="input-date-from"
+                 value=""
+                 placeholder="24 апреля 2017">
+          <span class="img-calendar"></span>
         </div>
 
         <div class="book-params-row">
