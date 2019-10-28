@@ -332,6 +332,7 @@ a {
   margin-bottom: 30px;
   height: 38px;
   display: flex;
+  justify-content: space-between;
 }
 
 .book-params-row-label {
@@ -376,7 +377,7 @@ a {
 }
 
 .book-params-row-digital-input {
-  width: 112px;
+  /*width: 112px;*/
   height: 38px;
 
   background-color: #f2f2f2;
@@ -426,15 +427,17 @@ a {
 
 .book-params-row:last-child {
   display: flex;
+  justify-content: space-between;
 }
 
 .book-params-row-part {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   display: flex;
 }
+.book-params-row-part:last-child  .book-params-row-label {
+  width: auto;
+  margin-right: 25px;
 
-.book-params-row-part:last-child > .book-params-row-label {
-  text-align: right;
 }
 
 .book-params-row-digital-input .img-minus {
