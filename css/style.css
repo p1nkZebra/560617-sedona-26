@@ -341,16 +341,38 @@ a {
   align-items: center;
 }
 
-.book-params-row-input {
+.book-params-row-label-input-area {
   width: 346px;
   height: 38px;
-  padding: 0 9px 0 12px;
-
-  /*flex-grow: 1;*/
-  background-color: #f2f2f2;
 
   display: flex;
-  justify-content: space-between;
+}
+
+.book-params-row-input {
+  padding: 0 9px 0 12px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+
+  flex-grow: 1;
+}
+
+.book-params-row-input:hover {
+  background-color: #ebebeb;
+}
+
+.book-params-row-input:focus {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #e5e5e5;
 }
 
 .book-params-row-digital-input {
@@ -365,11 +387,15 @@ a {
 .img-calendar {
   width: 21px;
   height: 23px;
-  margin: 0;
   padding: 0;
   outline: none;
   border: none;
   background: url(../img/icons/calendar-rest.svg) no-repeat center center;
+
+  position: absolute;
+  z-index: 1;
+  margin-top: 7px;
+  margin-left: 317px;
 }
 
 .img-calendar:hover,
@@ -379,6 +405,36 @@ a {
 
 .img-calendar:active {
   background: url(../img/icons/calendar-active.svg) no-repeat center center;
+}
+
+.book-params-row-input-num {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.book-params-row:last-child {
+  display: flex;
+}
+
+.book-params-row-part {
+  flex-grow: 1;
+  display: flex;
+}
+
+.book-params-row-part:last-child > .book-params-row-label {
+  text-align: right;
 }
 
 .book-params-row-digital-input .img-minus {

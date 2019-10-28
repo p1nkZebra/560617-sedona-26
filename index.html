@@ -218,56 +218,71 @@
           <div class="book-params-row-label">
             <label for="date-from">Дата заезда:</label>
           </div>
-          <input id="date-from"
-                 class="book-params-row-input"
-                 type="date"
-                 name="input-date-from"
-                 value=""
-                 placeholder="24 апреля 2017">
-          <span class="img-calendar"></span>
+          <div class="book-params-row-label-input-area">
+            <input id="date-from"
+                   class="book-params-row-input"
+                   type="text"
+                   name="input-date-from"
+                   value=""
+                   placeholder="24 апреля 2017">
+            <span class="img-calendar"></span>
+          </div>
         </div>
 
         <div class="book-params-row">
-
           <div class="book-params-row-label">
-            <label>Дата выезда:</label>
+            <label for="date-from">Дата выезда:</label>
           </div>
-
-          <div class="book-params-row-input">
-            <label>4 июля 2017</label>
-            <button type="button" class="img-calendar"></button>
+          <div class="book-params-row-label-input-area">
+            <input id="date-to"
+                   class="book-params-row-input"
+                   type="text"
+                   name="input-date-to"
+                   value=""
+                   placeholder="4 июля 2017">
+            <span class="img-calendar"></span>
           </div>
-
         </div>
 
         <div class="book-params-row">
-
-          <div class="book-params-row-label">
-            <label>Взрослые:</label>
-          </div>
-
-          <div class="book-params-row-digital-input">
-            <button type="button" class="img-minus"></button>
-
-            <div class="value">
-              <label>2</label>
+          <div class="book-params-row-part">
+            <div class="book-params-row-label">
+              <label>Взрослые:</label>
             </div>
 
-            <button type="button" class="img-plus"></button>
+            <div class="book-params-row-digital-input">
+              <button type="button" class="img-minus"></button>
+
+              <div class="value">
+                <input id="adults"
+                       class="book-params-row-input-num"
+                       name="input-adults"
+                       value=""
+                       placeholder="2">
+              </div>
+
+              <button type="button" class="img-plus"></button>
+            </div>
           </div>
 
-          <div class="book-params-row-label">
-            <label>Дети:</label>
-          </div>
-
-          <div class="book-params-row-digital-input">
-            <div class="img-minus"></div>
-
-            <div class="value">
-              <label>0</label>
+          <div class="book-params-row-part">
+            <div class="book-params-row-label">
+              <label>Дети:</label>
             </div>
 
-            <div class="img-plus"></div>
+            <div class="book-params-row-digital-input">
+              <div class="img-minus"></div>
+
+              <div class="value">
+                <input id="children"
+                       class="book-params-row-input-num"
+                       name="input-children"
+                       value=""
+                       placeholder="0">
+              </div>
+
+              <div class="img-plus"></div>
+            </div>
           </div>
 
         </div>
