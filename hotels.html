@@ -44,7 +44,7 @@
 
           <div class="filter-group">
             <div class="checkbox-group">
-              <legend>Инфраструктура:</legend>
+              <span>Инфраструктура:</span>
               <label class="checkbox-pic">
                 <input type="checkbox" checked>
                 <span></span>
@@ -63,7 +63,7 @@
               </div>
 
             <div class="checkbox-group">
-              <legend>Тип жилья:</legend>
+              <span>Тип жилья:</span>
               <label class="checkbox-pic">
                 <input type="checkbox" checked>
                 <span></span>
@@ -84,12 +84,26 @@
           </div>
 
           <div class="filter-group price">
-            <legend>Стоимость в сутки (Р):</legend>
+            <span>Стоимость в сутки (Р):</span>
 
             <div class="price-range-value">
-              <span>От 0</span>
+              <div>
+<!--                <label for="price-from">От</label>-->
+                <input id="price-from"
+                       type="text"
+                       name="price-from"
+                       value="ОТ 0"
+                       placeholder="">
+              </div>
               <span class="empty-span"></span>
-              <span>До 3000</span>
+              <div>
+<!--                <label for="price-to">До</label>-->
+                <input id="price-to"
+                       type="text"
+                       name="price-to"
+                       value="ДО 3000"
+                       placeholder="">
+              </div>
             </div>
 
             <div class="price-range-filter">
@@ -147,8 +161,12 @@
                   <a href="" class="hotel-name">Amara Resort & Spa</a>
 
                   <div class="hotel-type-and-price">
-                    <span class="type">Гостиница</span>
-                    <span class="price">от 4000 р.</span>
+                    <div class="left-part">
+                      <span class="type">Гостиница</span>
+                    </div>
+                    <div class="right-part">
+                      <span class="price">от 4000 р.</span>
+                    </div>
                   </div>
 
                   <div class="info-or-book">
@@ -188,8 +206,12 @@
                   <a href="" class="hotel-name">Desert Quail Inn</a>
 
                   <div class="hotel-type-and-price">
-                    <span class="type">Мотель</span>
-                    <span class="price">от 3000 р.</span>
+                    <div class="left-part">
+                      <span class="type">Мотель</span>
+                    </div>
+                    <div class="right-part">
+                      <span class="price">от 3000 р.</span>
+                    </div>
                   </div>
 
                   <div class="info-or-book">
@@ -227,8 +249,12 @@
                   <a href="" class="hotel-name">Villas at Poco Diablo</a>
 
                   <div class="hotel-type-and-price">
-                    <span class="type">Апартаменты</span>
-                    <span class="price">от 2000 р.</span>
+                    <div class="left-part">
+                      <span class="type">Апартаменты</span>
+                    </div>
+                    <div class="right-part">
+                      <span class="price">от 2000 р.</span>
+                    </div>
                   </div>
 
                   <div class="info-or-book">
@@ -269,35 +295,35 @@
           <a href="#"
              class="social-network-btn twitter"
              aria-label="Sedona on Twitter">
-            <img src="img/icons/twitter.svg">
+            <img src="img/icons/twitter.svg" width="17" height="15" alt="Twitter">
           </a>
         </li>
         <li>
           <a href="#"
              class="social-network-btn facebook"
              aria-label="Sedona on Facebook">
-            <img src="img/icons/facebook.svg">
+            <img src="img/icons/facebook.svg" width="12" height="22" alt="Facebook">
           </a>
         </li>
         <li>
           <a href="#"
              class="social-network-btn youtube"
              aria-label="Sedona on Youtube">
-            <img src="img/icons/youtube.svg">
+            <img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube">
           </a>
         </li>
       </ul>
     </div>
 
     <div class="htmlacademy-logo">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"
-           class="htmlacademy-logo-btn"
-           aria-label="HTML Academy">
-          <img class="regular" src="img/logo-htmlacademy.svg">
-          <img class="hover" src="img/logo-htmlacademy-hover.svg">
-          <img class="active" src="img/logo-htmlacademy-active.svg">
-        </a>
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"
+         class="htmlacademy-logo-btn"
+         aria-label="HTML Academy">
+        <img class="regular" src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy">
+        <img class="hover" src="img/logo-htmlacademy-hover.svg" width="114" height="40" alt="htmlacademy">
+        <img class="active" src="img/logo-htmlacademy-active.svg" width="114" height="40" alt="htmlacademy">
+      </a>
     </div>
 
   </footer>

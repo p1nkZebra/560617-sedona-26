@@ -32,9 +32,6 @@ a {
 /* HEADER */
 
 .main-navigation {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -106,6 +103,7 @@ a {
 
   text-align: center;
 
+  background-color: #e3f0f8;
   background-image: url(../img/sedona-background.jpg);
   background-repeat: no-repeat;
   background-position-y: -56px ;
@@ -136,17 +134,26 @@ a {
 }
 
 .catchphrase {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   font-weight: bold;
 }
 
-
-.number-text {
-  padding-top: 10px;
+.catchphrase-text {
+  margin: 0;
+  padding: 25px 0 0 0;
 }
 
-.simple-text {
-  padding: 5px 0;
+.text p {
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+
+.text .text-item {
+  margin: 0;
+  padding: 20px 0 0 0;
+  line-height: 21px;
 }
 
 .advantage {
@@ -170,14 +177,14 @@ a {
   font-weight: bold;
 }
 
-.advantage .simple-text,
-.recommends .simple-text {
-  padding-top: 5px;
+.recommends p {
+  margin: 0;
+  padding-top: 20px;
   line-height: 21px;
 }
 
 .recommends {
-  padding: 60px 0;
+  padding: 60px 0 75px 0;
   background-color: #ffffff;
 }
 
@@ -227,8 +234,16 @@ a {
   margin:  0;
   line-height: 21px;
 }
-.advantage-list .simple-text {
-  padding: 5px 15px 0 15px ;
+
+.advantage-list p {
+  margin: 0;
+  padding: 25px 0 0 0;
+}
+
+.advantage-list .text-item {
+  margin: 0;
+  padding: 20px 0 0 0;
+  line-height: 21px;
 }
 
 .empty-section {
@@ -323,35 +338,34 @@ a {
 .book-params {
   margin: 55px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
 }
 
 .book-params-row {
   margin-bottom: 30px;
-  height: 38px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .book-params-row-label {
   width: 112px;
-
-  display: flex;
-  align-items: center;
 }
 
 .book-params-row-label-input-area {
   width: 346px;
-  height: 38px;
-
-  display: flex;
+  position: relative;
 }
 
 .book-params-row-input {
+  width: 100%;
+  height: 38px;
+  box-sizing: border-box;
   padding: 0 9px 0 12px;
   margin: 0;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -388,15 +402,14 @@ a {
 .img-calendar {
   width: 21px;
   height: 23px;
-  padding: 0;
   outline: none;
   border: none;
   background: url(../img/icons/calendar-rest.svg) no-repeat center center;
 
   position: absolute;
   z-index: 1;
-  margin-top: 7px;
-  margin-left: 317px;
+  top: 6px;
+  right: 9px;
 }
 
 .img-calendar:hover,
@@ -433,11 +446,11 @@ a {
 .book-params-row-part {
   /*flex-grow: 1;*/
   display: flex;
+  align-items: center;
 }
 .book-params-row-part:last-child  .book-params-row-label {
   width: auto;
   margin-right: 25px;
-
 }
 
 .book-params-row-digital-input .img-minus {
@@ -520,6 +533,7 @@ a {
 
 .search-filter-container {
   padding: 30px 0;
+  background-color: #666d75;
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position-y: -56px ;
@@ -545,7 +559,7 @@ a {
   width: 255px;
 }
 
-.filter-group legend {
+.filter-group span {
   display: block;
   margin-bottom: 0px;
 
@@ -605,11 +619,28 @@ a {
   border-color: #ffffff;
 }
 
-.price-range-value span {
+.price-range-value div {
   width: 159px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  /*vertical-align: middle;*/
+}
+
+.price-range-value label {
+  width: 70px;
+  text-align: right;
+}
+
+.price-range-value input {
+  width: 100px;
   text-align: center;
-  vertical-align: middle;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .price-range-value .empty-span {
@@ -765,11 +796,15 @@ a {
 .search-result-container li,
 .search-result-container li:last-child {
   background-color: #ffffff;
-  margin-top: 1px;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: #e5e5e5;
 }
 
 .search-result-container li:last-child {
-  margin-bottom: 1px;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+  border-color: #e5e5e5;
 }
 
 .sort-direction {
@@ -871,13 +906,12 @@ a {
   margin-bottom: 10px;
 }
 
-.hotel-type-and-price .type {
-  width: 110px;
+.hotel-type-and-price .left-part {
+  width: 120px;
 }
 
 .hotel-type-and-price .price {
   width: 140px;
-  margin-left: 6px;
 }
 
 .book-it-now {
@@ -1001,6 +1035,7 @@ footer div {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social-network-btn:hover,
