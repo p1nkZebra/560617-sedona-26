@@ -250,6 +250,7 @@ a {
   height: 172px;
   padding: 60px 0;
   background-color: #ffffff;
+  position: relative;
 }
 
 .sedona-google-map-section {
@@ -315,9 +316,11 @@ a {
 
 .popup-container {
   width: 568px;
-  height: 481px;
 
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 292px;
+  left: 317px;
 
   display: flex;
   flex-direction: column;
