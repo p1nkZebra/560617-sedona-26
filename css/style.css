@@ -247,8 +247,6 @@ a {
 }
 
 .empty-section {
-  /*height: 172px;*/
-  /*padding: 60px 0;*/
   background-color: #ffffff;
   position: relative;
 }
@@ -438,7 +436,6 @@ a {
 }
 
 .book-params-row-part {
-  /*flex-grow: 1;*/
   display: flex;
   align-items: center;
 }
@@ -619,8 +616,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*text-align: center;*/
-  /*vertical-align: middle;*/
 }
 
 .price-range-value label {
