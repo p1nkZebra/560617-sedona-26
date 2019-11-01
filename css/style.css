@@ -247,8 +247,8 @@ a {
 }
 
 .empty-section {
-  height: 172px;
-  padding: 60px 0;
+  /*height: 172px;*/
+  /*padding: 60px 0;*/
   background-color: #ffffff;
   position: relative;
 }
@@ -319,11 +319,9 @@ a {
 
   position: absolute;
   z-index: 1;
-  top: 292px;
-  left: 317px;
-
-  display: flex;
-  flex-direction: column;
+  top: 100%;
+  left: 50%;
+  margin-left: -284px;
 }
 
 .popup-hide {
@@ -331,15 +329,13 @@ a {
 }
 
 .search-form {
+  padding: 55px;
+
   line-height: 26px;
   font-weight: bold;
 
   color: #000000;
   background-color: #ffffff;
-}
-
-.book-params {
-  margin: 55px;
 }
 
 .book-params-row {
